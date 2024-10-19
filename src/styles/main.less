@@ -53,6 +53,13 @@ header {
     border-radius: 100px;
   }
 }
+.avatar-container {
+  overflow: hidden;
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: 150px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 50%; /* Para tornar a imagem redonda */
+  position: relative;
+}
 .avatar {
   width: 150px;
   height: 150px;
@@ -62,6 +69,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.avatar:hover .avatar {
+  filter: grayscale(0%); /* Volta a ser colorida */
 }
 
 .avatar img {
@@ -113,12 +124,13 @@ header {
 .projects-list-item {
   a {
     text-decoration: none;
+    font-size: #font-sizes.medium;
     background-color: #colors[button-color];
     display: block;
     padding: 16px 20px;
     margin-bottom: 16px;
     text-align: center;
-    color: #colors[textColor];
+    color: #colors[text-color];
     font-weight: bold;
     border-radius: 30px;
     border: 2px solid #colors[button-color];
