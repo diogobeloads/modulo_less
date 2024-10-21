@@ -15,8 +15,8 @@
 }
 
 body {
-  background-color: #colors[background-color];
-  color: #colors[text-color];
+  background-color: @corDeFundo;
+  color: @corDoTexto;
 }
 
 li {
@@ -119,26 +119,26 @@ header {
 
 .projects-list {
   margin-top: 32px;
-}
 
-.projects-list-item {
-  a {
-    text-decoration: none;
-    font-size: #font-sizes[medium];
-    background-color: #colors[button-color];
-    display: block;
-    padding: 16px 20px;
-    margin-bottom: 16px;
-    text-align: center;
-    color: #colors[text-color];
-    font-weight: bold;
-    border-radius: 30px;
-    border: 2px solid #colors[button-color];
-    transition: all ease 0.5s;
+  &-item {
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      background-color: #colors[buttoncolor];
+      display: block;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #colors[buttoncolor];
+      font-weight: bold;
+      border-radius: 30px;
+      border: 2px solid;
+      transition: all ease 0.5s;
 
-    &:hover {
-      color: #colors[button-color];
-      background-color: transparent;
+      &:hover {
+        color: #colors[buttoncolor];
+        background-color: #colors[backgroundcolor];
+      }
     }
   }
 }
